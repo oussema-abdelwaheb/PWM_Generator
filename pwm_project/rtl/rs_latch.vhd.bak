@@ -1,0 +1,33 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity rs_latch is
+    Port (
+        clk   : in  std_logic;
+        clear : in  std_logic;     -- asynchronous reset
+        S     : in  std_logic;     -- synchronous set
+        R     : in  std_logic;     -- synchronous reset
+        Q     : out std_logic
+    );
+end rs_latch;
+
+architecture rtl of rs_latch is
+    signal q_reg : std_logic := '0';
+begin
+
+    process(clk, clear)
+    begin
+        if clear = '1' then                 -- ASYNCHRONOUS
+            q_reg <= '0';
+        elsif rising_edge(clk) then         -- SYNCHRONOUS
+            if R = '1' then
+                q_reg <= '0';
+            elsif S = '1' then
+                q_reg <= '1';
+            end if;
+        end if;
+    end process;
+
+    Q <= q_reg;
+
+end rtl;

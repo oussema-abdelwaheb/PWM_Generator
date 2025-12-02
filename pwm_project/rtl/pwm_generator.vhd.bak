@@ -1,0 +1,78 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.NUMERIC_STD.ALL;
+
+entity pwm_generator is
+    Port (
+        clk     : in  std_logic;
+        clear   : in  std_logic;
+        d       : in  std_logic_vector(15 downto 0);
+        pulse   : out std_logic
+    );
+end pwm_generator;
+
+architecture structural of pwm_generator is
+
+    -- Internal signals
+    signal counterq     : std_logic_vector(15 downto 0);
+    signal d_clamped    : unsigned(15 downto 0);
+    signal cmp_s_sync   : std_logic := '0';
+    signal cmp_r_sync   : std_logic := '0';
+
+    constant MAX_D : unsigned(15 downto 0) := to_unsigned(19999, 16);
+
+begin
+
+    --------------------------------------------------------------------
+    -- 0. Clamp D (pure concurrent logic ? allowed!)
+    --------------------------------------------------------------------
+    d_clamped <= 
+        (others => '0')                    when unsigned(d) = 0 else
+        MAX_D                              when unsigned(d) > MAX_D else
+        unsigned(d);
+
+    --------------------------------------------------------------------
+    -- 1. Counter
+    --------------------------------------------------------------------
+    CNT : entity work.counter16
+        port map (
+            clk   => clk,
+            clear => clear,
+            q     => counterq
+        );
+
+    --------------------------------------------------------------------
+    -- 2. Synchronous comparators
+    --------------------------------------------------------------------
+    process(clk)
+    begin
+        if rising_edge(clk) then
+            -- compare with 0
+            if unsigned(counterq) = 0 then
+                cmp_s_sync <= '1';
+            else
+                cmp_s_sync <= '0';
+            end if;
+
+            -- compare with clamped D
+            if unsigned(counterq) = d_clamped then
+                cmp_r_sync <= '1';
+            else
+                cmp_r_sync <= '0';
+            end if;
+        end if;
+    end process;
+
+    --------------------------------------------------------------------
+    -- 3. RS latch with synchronous S/R and async clear
+    --------------------------------------------------------------------
+    RS : entity work.rs_latch
+        port map (
+            clk => clk,
+            clr => clear,
+            S   => cmp_s_sync,
+            R   => cmp_r_sync,
+            Q   => pulse
+        );
+
+end structural;

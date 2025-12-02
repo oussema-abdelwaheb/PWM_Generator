@@ -1,0 +1,345 @@
+m255
+K3
+13
+cModel Technology
+dC:\altera\13.1
+Ecomparator16
+Z0 w1763997623
+Z1 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 dC:\Users\ousse\Desktop\pwm_project
+Z5 8C:/Users/ousse/Desktop/pwm_project/rtl/comparator16.vhd
+Z6 FC:/Users/ousse/Desktop/pwm_project/rtl/comparator16.vhd
+l0
+L5
+VGk3IRg@ODEQNhMTVMOec92
+Z7 OV;C;10.1d;51
+32
+Z8 !s108 1764543990.041000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/ousse/Desktop/pwm_project/rtl/comparator16.vhd|
+Z10 !s107 C:/Users/ousse/Desktop/pwm_project/rtl/comparator16.vhd|
+Z11 o-work work -2002 -explicit -O0
+Z12 tExplicit 1
+!s100 dJkOG55okKicea_9OWNP80
+!i10b 1
+Artl
+R1
+R2
+R3
+Z13 DEx4 work 12 comparator16 0 22 Gk3IRg@ODEQNhMTVMOec92
+l14
+L13
+VS6275ecG>c8ThnL73T9;k2
+R7
+32
+R8
+R9
+R10
+R11
+R12
+!s100 A`zj@@8CGBoaV]1bTnOV70
+!i10b 1
+Ecounter16
+Z14 w1763997293
+R1
+R2
+R3
+R4
+Z15 8C:/Users/ousse/Desktop/pwm_project/rtl/counter16.vhd
+Z16 FC:/Users/ousse/Desktop/pwm_project/rtl/counter16.vhd
+l0
+L5
+Vz3KQhW02=bJ5SeXIg0IkQ3
+R7
+32
+Z17 !s108 1764543990.145000
+Z18 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/ousse/Desktop/pwm_project/rtl/counter16.vhd|
+Z19 !s107 C:/Users/ousse/Desktop/pwm_project/rtl/counter16.vhd|
+R11
+R12
+!s100 fL0<1Zjj_:UlKP<9^LfUm3
+!i10b 1
+Artl
+R1
+R2
+R3
+Z20 DEx4 work 9 counter16 0 22 z3KQhW02=bJ5SeXIg0IkQ3
+l19
+L13
+VGBgdK=CgX3N:5N5XmnNhb3
+R7
+32
+R17
+R18
+R19
+R11
+R12
+!s100 1mIe0;4<U:39VS<3K??OJ0
+!i10b 1
+Epwm_generator
+Z21 w1764069728
+R1
+R2
+R3
+R4
+Z22 8C:/Users/ousse/Desktop/pwm_project/rtl/pwm_generator.vhd
+Z23 FC:/Users/ousse/Desktop/pwm_project/rtl/pwm_generator.vhd
+l0
+L5
+VLc:nk9n8KYVLz=dXX=4bZ1
+R7
+32
+Z24 !s108 1764543990.246000
+Z25 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/ousse/Desktop/pwm_project/rtl/pwm_generator.vhd|
+Z26 !s107 C:/Users/ousse/Desktop/pwm_project/rtl/pwm_generator.vhd|
+R11
+R12
+!s100 5@gZc`09zViHMWWj>QkUF0
+!i10b 1
+Astructural
+Z27 DEx4 work 8 rs_latch 0 22 0R2`=^HWP>X=]?B1E_k2Y0
+R13
+R20
+R1
+R2
+R3
+Z28 DEx4 work 13 pwm_generator 0 22 Lc:nk9n8KYVLz=dXX=4bZ1
+l24
+L14
+VRgWP`B^U[DHmRzaHMiV^g1
+R7
+32
+R24
+R25
+R26
+R11
+R12
+!s100 FSg@DXl9iJjN9jL?Bdm:K3
+!i10b 1
+Epwm_robot
+Z29 w1764543763
+R1
+R2
+R3
+R4
+Z30 8C:/Users/ousse/Desktop/pwm_project/pwm_robot.vhd
+Z31 FC:/Users/ousse/Desktop/pwm_project/pwm_robot.vhd
+l0
+L5
+V^i;<L1S5nA`Fh?35f45BV3
+R7
+32
+Z32 !s108 1764543990.543000
+Z33 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/ousse/Desktop/pwm_project/pwm_robot.vhd|
+Z34 !s107 C:/Users/ousse/Desktop/pwm_project/pwm_robot.vhd|
+R11
+R12
+!s100 X[ZdcClkWDFUD2gc5IOH^0
+!i10b 1
+Astructural
+R28
+R20
+R1
+R2
+R3
+Z35 DEx4 work 9 pwm_robot 0 22 ^i;<L1S5nA`Fh?35f45BV3
+l46
+L22
+Vo0]H13m@Z[o[0M0VKPL]Q2
+!s100 aZ=4bMa0`ROE4M8lM;_0Z0
+R7
+32
+R32
+R33
+R34
+R11
+R12
+!i10b 1
+Epwm_robot_sync
+Z36 w1764543623
+R1
+R2
+R3
+R4
+R30
+R31
+l0
+L5
+VbObSmoDmQ`Q[hSK?ZbFFg2
+R7
+32
+Z37 !s108 1764543679.356000
+R33
+R34
+R11
+R12
+!s100 j7ZWVRm=WWa^KD5eFjPD42
+!i10b 1
+Astructural
+R28
+R20
+R1
+R2
+R3
+Z38 DEx4 work 14 pwm_robot_sync 0 22 bObSmoDmQ`Q[hSK?ZbFFg2
+l46
+L22
+Vf]m?fJ=]4g7AA`aBZVnLR2
+R7
+32
+R37
+R33
+R34
+R11
+R12
+!s100 LIZa@10JY39oW0eozDcdf2
+!i10b 1
+Ers_latch
+Z39 w1764068222
+R2
+R3
+R4
+Z40 8C:/Users/ousse/Desktop/pwm_project/rtl/rs_latch.vhd
+Z41 FC:/Users/ousse/Desktop/pwm_project/rtl/rs_latch.vhd
+l0
+L4
+V0R2`=^HWP>X=]?B1E_k2Y0
+R7
+32
+Z42 !s108 1764543990.353000
+Z43 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/ousse/Desktop/pwm_project/rtl/rs_latch.vhd|
+Z44 !s107 C:/Users/ousse/Desktop/pwm_project/rtl/rs_latch.vhd|
+R11
+R12
+!s100 [LKel0LTTTNaA6M9ecX1A3
+!i10b 1
+Artl
+R2
+R3
+R27
+l16
+L14
+V;4XlL>8EB0V@nnfQ9KoH_3
+R7
+32
+R42
+R43
+R44
+R11
+R12
+!s100 mS^d^:>5jKbh5cZF0GAPK0
+!i10b 1
+Etb_pwm
+Z45 w1764539286
+R2
+R3
+R4
+Z46 8C:/Users/ousse/Desktop/pwm_project/sim/tb_pwm.vhd
+Z47 FC:/Users/ousse/Desktop/pwm_project/sim/tb_pwm.vhd
+l0
+L4
+V98J;B6gQHGf@o4zF=`]kH2
+R7
+32
+Z48 !s108 1764543990.453000
+Z49 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/ousse/Desktop/pwm_project/sim/tb_pwm.vhd|
+Z50 !s107 C:/Users/ousse/Desktop/pwm_project/sim/tb_pwm.vhd|
+R11
+R12
+!s100 J86L@0>V0X4=_m4z9OW5`2
+!i10b 1
+Abehavior
+R1
+R28
+R2
+R3
+DEx4 work 6 tb_pwm 0 22 98J;B6gQHGf@o4zF=`]kH2
+l16
+L7
+V=AU^b]>F`??YbZ4TRC@XT2
+R7
+32
+R48
+R49
+R50
+R11
+R12
+!s100 d;NUfcKe7S5846b^d703=3
+!i10b 1
+Etb_robot
+Z51 w1764543987
+R1
+R2
+R3
+R4
+Z52 8C:/Users/ousse/Desktop/pwm_project/tb_robot.vhd
+Z53 FC:/Users/ousse/Desktop/pwm_project/tb_robot.vhd
+l0
+L5
+VF]5`QAkQ9m=CoWm6h^eFf3
+!s100 O8;j:a[^5P`eGe_T0J7oX0
+R7
+32
+!i10b 1
+Z54 !s108 1764543990.642000
+Z55 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/ousse/Desktop/pwm_project/tb_robot.vhd|
+Z56 !s107 C:/Users/ousse/Desktop/pwm_project/tb_robot.vhd|
+R11
+R12
+Asim
+R35
+R1
+R2
+R3
+Z57 DEx4 work 8 tb_robot 0 22 F]5`QAkQ9m=CoWm6h^eFf3
+l19
+L8
+V4EZzS8c2debClh>THc=?J3
+!s100 ?nOgkbddOgZZc_@_Y3ekf1
+R7
+32
+!i10b 1
+R54
+R55
+R56
+R11
+R12
+Etb_robot_sync
+Z58 w1764543649
+R1
+R2
+R3
+R4
+R52
+R53
+l0
+L5
+VMomV9dIbLPFXeR@8>C=7C0
+R7
+32
+Z59 !s108 1764543679.451000
+R55
+Z60 !s107 C:/Users/ousse/Desktop/pwm_project/tb_robot.vhd|
+R11
+R12
+!s100 [;9X<<k0`9UiYKhb5`H;61
+!i10b 1
+Asim
+R38
+R1
+R2
+R3
+DEx4 work 13 tb_robot_sync 0 22 MomV9dIbLPFXeR@8>C=7C0
+l18
+L8
+VfOkdRYoFfUG^`IQFT0D:`0
+R7
+32
+R59
+R55
+R60
+R11
+R12
+!s100 Kk^emRGnY6N9anLmM5YXS2
+!i10b 1

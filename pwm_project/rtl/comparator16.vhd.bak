@@ -1,0 +1,16 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.NUMERIC_STD.ALL;
+
+entity comparator16 is
+    Port (
+        A : in std_logic_vector(15 downto 0);
+        B : in std_logic_vector(15 downto 0);
+        Y : out std_logic
+    );
+end comparator16;
+
+architecture rtl of comparator16 is
+begin
+    Y <= '1' when unsigned(A) >= unsigned(B) else '0';
+end rtl;
